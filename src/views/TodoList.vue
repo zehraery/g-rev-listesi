@@ -71,7 +71,7 @@ import ls from "../services/localStorageService";
 const router = useRouter();
 const newTodo = ref("");
 const tasks = ref([]);
-const user = ref(ls.getUser()); 
+const user = ref(ls.getUser());
 
 async function loadTasks() {
   const fetchFlip = ls.getFetchFlip();
@@ -111,7 +111,7 @@ function deleteTodo(index) {
   ls.saveTasks(tasks.value);
 }
 function handleLogout() {
-  ls.clearAll(); 
+  ls.clearAll();
   user.value = null;
   tasks.value = [];
   router.push("/welcome");
