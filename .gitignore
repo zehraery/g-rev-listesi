@@ -1,0 +1,16 @@
+# Node modules
+node_modules/
+
+# Build / paket dosyaları
+*.zip
+*.cab
+
+# Sistem / Windows dosyaları
+*.lnk
+Desktop.ini
+*.DAT
+*.exe
+*.dll
+
+# IDE / editör dosyaları
+.vscode/
