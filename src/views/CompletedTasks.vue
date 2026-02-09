@@ -67,7 +67,7 @@ function undoTask(index) {
   const tasks = ls.getTasks();
   tasks.push(task);
   ls.saveTasks(tasks);
-}
+} //isim değişikliği
 
 function deleteCompletedTask(index) {
   completedTasks.value.splice(index, 1);
